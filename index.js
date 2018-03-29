@@ -8,4 +8,8 @@ msg.addEventListener('click',(event) => {
     alert(`Sorry we don't really sell anything.... We are a fictatious company.`);
 })
 
+let contactMsg = document.querySelector('#nav2')
 
+contactMsg.addEventListener('click', (event) => {
+    prompt('Enter your Email and we will get in touch');
+})
