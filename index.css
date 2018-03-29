@@ -88,6 +88,7 @@
   border: 1px solid black;
 }
 
+
 #nav2 {
   text-align: center;
   grid-column: 2;
@@ -139,7 +140,7 @@
   flex-direction: column;
   justify-content: center;
   animation: fadein;
-  animation-duration: 7s;
+  animation-duration: 15s;
   animation-fill-mode: forwards;
   padding: 5%;
 }
@@ -147,8 +148,7 @@
 .images {
   border: 3px solid black;
   margin: 3%;
-  color: white;
-  text-shadow: 1px 1px 1px black;
+  color: black;
   text-align: center;
 }
 
