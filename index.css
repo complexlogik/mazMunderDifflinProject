@@ -1,0 +1,142 @@
+
+* {box-sizing: border-box;}
+
+.wrapper {
+  max-width: 100%;
+  height: 100%;
+}
+
+.wrapper > div {
+  color: black;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr, 1fr, 1fr;
+  grid-gap: .25%;
+  grid-template-rows: 1fr,1fr,1fr;
+}
+
+#imgOne {
+  grid-column: 1/2;
+  grid-row: 1/100;
+  background-image: url('paperPen2.jpg');
+  background-repeat: space;
+  background-position: center;
+  color: white;
+  background-color: black;
+  border: 3px solid black;
+  animation: fadein;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+#imgTwo {
+  grid-column: 1/4;
+  grid-row: 2;
+  text-align: center;
+  font-size: 40px;
+  background-image: url('oldPaper.jpg');
+  z-index: 2;
+  color:black;
+  border: 3px solid black;
+  height: 50px;
+  animation: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+#imgThree {
+  grid-column: 1 / 3;
+  grid-row:97/99;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  background-image: url('oldPaper.jpg');
+  color:black;
+  border: 3px solid black;
+  height: 30px;
+  animation: fadein;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+
+#nav1 {
+  grid-column: 1;
+  width: 50%;
+  text-align: center;
+}
+
+#nav1:hover {
+  grid-column: 1;
+  height: 27px;
+  width: 50%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border: 1px solid #FAF7E8;
+}
+
+#nav2 {
+  text-align: center;
+  grid-column: 2;
+  width: 50%;
+}
+
+#nav2:hover {
+  grid-column: 2;
+  grid-row: 1;
+  height: 27px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+
+#imgFour {
+  grid-column: 3;
+  grid-row: 1/100;
+  background-image: url('blankslate.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  color: white;
+  border: 3px solid black;
+  animation: fadein;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+
+#imgFive {
+  grid-column: 2;
+  grid-row: 1/100;
+  background-image: url('oldpaper.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  color:black;
+  border: 3px solid black;
+  animation: fadein;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+#imgOne {
+  animation: fadein;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+.hidden {
+  visibility: hidden;
+}
