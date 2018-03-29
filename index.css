@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Indie Flower', cursive;
+  font-size: 15px;
 }
 
 .wrapper {
@@ -31,12 +32,16 @@
   width: 100%;
   background-color: black;
   border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   animation: fadein;
   animation-duration: 5s;
   animation-fill-mode: forwards;
   padding: 5%;
 }
-#heading{
+
+#heading {
   grid-column: 1/4;
   grid-row: 2;
   text-align: center;
@@ -50,6 +55,7 @@
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
+
 #navHolder {
   grid-column: 1 / 3;
   grid-row:97/99;
@@ -79,7 +85,7 @@
   background-color: black;
   color: white;
   text-align: center;
-  border: 1px solid #FAF7E8;
+  border: 1px solid black;
 }
 
 #nav2 {
@@ -109,6 +115,9 @@
   border: 3px solid black;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   animation: fadein;
   animation-duration: 10s;
   animation-fill-mode: forwards;
@@ -126,10 +135,25 @@
   height: 100%;
   width: 100%;
   border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   animation: fadein;
   animation-duration: 7s;
   animation-fill-mode: forwards;
   padding: 5%;
+}
+
+.images {
+  border: 3px solid black;
+  margin: 3%;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+}
+
+.images:hover {
+  transform: scale(1.1);
 }
 
 @keyframes fadein {
@@ -143,11 +167,6 @@
 
 }
 
-#imgOne {
-  animation: fadein;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-}
 
 .hidden {
   visibility: hidden;
